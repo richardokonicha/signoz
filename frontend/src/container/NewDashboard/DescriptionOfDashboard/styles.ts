@@ -1,4 +1,4 @@
-import { Button as ButtonComponent } from 'antd';
+import { Button as ButtonComponent, Drawer } from 'antd';
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -9,5 +9,12 @@ export const Button = styled(ButtonComponent)`
 	&&& {
 		display: flex;
 		align-items: center;
+	}
+`;
+
+export const DrawerContainer = styled(Drawer)`
+	.ant-drawer-header {
+		padding: 0;
+		border: none;
 	}
 `;
