@@ -6,8 +6,8 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "i18n:generate-hash": "node ./i18-generate-hash.cjs",
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "node api.js && vite",
+    "build": "node api.js && vite build",
     "preview": "vite preview",
     "prettify": "oxfmt",
     "fmt": "oxfmt --check",
